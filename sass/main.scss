@@ -10,14 +10,6 @@
 @import "pages/_home.scss";
 
 
-/* 
-    Makes sure border and padding are NOT added
-    to the total width/height specified to a box.
-*/
-/* 
-    Every element now inherits the border-box box-sizing
-    rule from the body selector below.
-*/
 
 .header {
     height: 95vh;
