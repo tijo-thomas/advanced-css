@@ -1,0 +1,11 @@
+/*
+    Clears the float so that the element has
+    floated element's is no longer colappsed.
+*/
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

@@ -7,4 +7,18 @@
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
+
+    @include clearfix;
+
+    .col-1-of-2 {
+        // Subtracts gutter from 100% width and divides by 2.
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        background-color: orangered;
+        float: left;
+
+        // Applies right margin to all .col-1-of-2 elements that are not the last-child.
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
 }
