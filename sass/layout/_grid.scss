@@ -2,5 +2,9 @@
     max-width: $grid-width;
     background-color: #eeeeee;
     margin: 0 auto; // Trick to center a block element inside a block element.
-    margin-bottom: $gutter-vertical;
+    
+    // Applies bottom margin to all .row elements that are not the last-child.
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
 }
