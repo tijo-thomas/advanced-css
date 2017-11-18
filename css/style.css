@@ -105,6 +105,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 .btn {
   /* 
     Content & Display properties must be specified 
@@ -153,7 +156,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eeeeee;
   margin: 0 auto;
   /* 
         Attribute selector that selects all elements with
@@ -166,7 +168,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orangered;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
