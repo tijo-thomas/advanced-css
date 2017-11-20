@@ -195,7 +195,6 @@ body {
   position: relative;
   height: 50rem; }
   .card__side {
-    background-color: orangered;
     color: #fff;
     font-size: 2rem;
     height: 50rem;
@@ -206,10 +205,11 @@ body {
     width: 100%;
     backface-visibility: hidden; }
     .card__side--front {
-      background-color: orangered; }
+      background-color: #fff; }
     .card__side--back {
-      background-color: green;
       transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
