@@ -4,10 +4,10 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &__side {
-        height: 50rem;
+        height: 52rem;
         transition: all 0.8s ease;
         position: absolute;
         top: 0;
@@ -89,6 +89,30 @@
             background-image: linear-gradient(to right bottom,
             rgba($color-secondary-light, 0.85),
             rgba($color-secondary-dark, 0.85));
+        }
+    }
+
+    // FRONT SIDE DETAILS STYLING
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            // So the line separators on are too long.
+            width: 80%;
+            // Centers block element inside block element since width is 80%.
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                // Add a line separator after every item except last li.
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
         }
     }
 
