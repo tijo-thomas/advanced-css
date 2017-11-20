@@ -205,6 +205,12 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
+    /* 
+            Re-rounds corners since the image
+            overlaps the parent element. The image
+            is overflowing the parent in the corners.
+        */
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: #fff; }
