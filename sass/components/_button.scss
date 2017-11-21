@@ -35,6 +35,15 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
     /* 
     Content & Display properties must be specified 
     on after pseudo-element. This size should match
